@@ -5,6 +5,9 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
+  org_matrix <- x
+  
+  inv_matrix <- cacheSolve(org_matrix)
 }
 
 
@@ -12,4 +15,5 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+  solve(x)
 }
